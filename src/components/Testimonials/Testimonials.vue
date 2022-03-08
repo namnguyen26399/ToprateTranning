@@ -1,8 +1,25 @@
 <template>
-    <div class="Testimonials w-full h-[335px] pl-32 mt-[200px] flex md:pl-10 sm:block  sm:mt-[600px] "  >
-        <div id="left" class="w-auto pr-[124px] md:mr-0 md:pr-10 sm:w-full" >
-            <p data-aos="fade-up" class="p1 mt-[9px] mb-2  sm:w-full sm:ml-0" >Testimonials</p>
-            <p data-aos="fade-up" class="p2 text-[50px] w-[409px] sm:text-2xl sm:w-full">
+    <div
+        class="
+            Testimonials
+            w-full
+            h-[335px]
+            pl-32
+            mt-[200px]
+            flex
+            md:pl-10
+            sm:block sm:mt-[500px]
+            sm:pl-5
+        "
+    >
+        <div id="left" class="w-auto pr-[124px] md:mr-0 md:pr-10 sm:w-full sm:pr-5">
+            <p data-aos="fade-up" class="p1 mt-[9px] mb-2 sm:w-full sm:ml-0 ">
+                Testimonials
+            </p>
+            <p
+                data-aos="fade-up"
+                class="p2 text-[50px] w-[409px] sm:text-2xl sm:w-full"
+            >
                 What people say about Us.
             </p>
         </div>
@@ -16,16 +33,15 @@
                     bg-white
                     mike-taylor
                     relative
-                    sm:h-80
-                    sm:w-[300px]
+                    sm:h-80 sm:w-[300px]
                 "
             >
-                <p class="p3 pl-[34px]">
+                <p id="mess" class="p3 pl-[34px]">
                     “On the Windows talking painted pasture yet its express
                     parties use. Sure last upon he same as knew next. Of
                     believed or diverted no.”
                 </p>
-                <p class="p4 mt-[34px] pl-[34px]">Mike taylor</p>
+                <p id="author" class="p4 mt-[34px] pl-[34px]">Mike taylor</p>
                 <p class="p5 mt-[5px] pl-[34px]">Lahore, Pakistan</p>
                 <img
                     class="absolute -left-8 -top-8"
@@ -34,14 +50,26 @@
                 />
             </div>
             <div class="flex mt-11">
-                <button class="mr-[26px] ml-[200px] sm:ml-28  ">
-                    <img src="../../assets/images/page1.png" alt="" />
+                <button class="mr-[26px] ml-[200px] sm:ml-28" @click="page1">
+                    <img
+                        id="img-page1"
+                        src="../../assets/images/page1.png"
+                        alt=""
+                    />
                 </button>
-                <button class="mr-[26px]">
-                    <img src="../../assets/images/page2.png" alt="" />
+                <button class="mr-[26px]" @click="page2">
+                    <img
+                        id="img-page2"
+                        src="../../assets/images/page2.png"
+                        alt=""
+                    />
                 </button>
-                <button>
-                    <img src="../../assets/images/page2.png" alt="" />
+                <button @click="page3">
+                    <img
+                        id="img-page3"
+                        src="../../assets/images/page2.png"
+                        alt=""
+                    />
                 </button>
             </div>
         </div>
@@ -49,7 +77,40 @@
 </template>
 
 <script>
-export default {};
+export default {
+    methods: {
+        page3() {
+            document.getElementById("mess").innerHTML =
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.";
+            document.getElementById("img-page3").src =
+                "src/assets/images/page1.png";
+            document.getElementById("img-page2").src =
+                "src/assets/images/page2.png";
+            document.getElementById("img-page1").src =
+                "src/assets/images/page2.png";
+        },
+        page2() {
+            document.getElementById("mess").innerHTML =
+                "Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire!!!";
+            document.getElementById("img-page2").src =
+                "src/assets/images/page1.png";
+            document.getElementById("img-page3").src =
+                "src/assets/images/page2.png";
+            document.getElementById("img-page1").src =
+                "src/assets/images/page2.png";
+        },
+        page1() {
+            document.getElementById("mess").innerHTML =
+                "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”";
+            document.getElementById("img-page1").src =
+                "src/assets/images/page1.png";
+            document.getElementById("img-page2").src =
+                "src/assets/images/page2.png";
+            document.getElementById("img-page3").src =
+                "src/assets/images/page2.png";
+        },
+    },
+};
 </script>
 
 <style scoped>

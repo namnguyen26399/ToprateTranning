@@ -217,7 +217,7 @@
                             <img
                                 id="btn-more"
                                 class="w-3"
-                                src="../.././assets/images/down.png"
+                                src="../../assets/images/down.png"
                                 alt=""
                             />
                         </button>

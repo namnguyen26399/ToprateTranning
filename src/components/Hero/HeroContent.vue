@@ -2,7 +2,7 @@
     <div id="Desc" class="mt-44 pl-32 w-full h-770px relative  flex md:pl-16 sm:pl-4  ">
         <div class="w-1/2">
             <div id="Text" class="" style=" height: 540px ">
-                <div id="tagline" class="poppins max-w-[410px]">
+                <div id="tagline" class="poppins max-w-[410px] sm:mt-[-100px]">
                     Best Destinations around the world
                 </div>
                 <div id="heading" class="volkhov max-w-[545px] md:text-[55px] sm:text-[40px] sm:leading-none"  >

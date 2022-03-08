@@ -8,8 +8,8 @@
 
             <div id="content" class="mt-[31px]">
                 <!-- //? 1  -->
-                <div class="flex  sm:w-full sm:pl-[20px]" data-aos="fade-right ">
-                    <div class="booking-img relative w-12 h-12 mt-2">
+                <div class="flex  sm:w-full sm:pl-[20px] booking-step1 pl-5" data-aos="fade-right ">
+                    <div class="booking-img relative w-12 h-12 mt-4">
                         <img
                             class="w-12 h-12"
                             src="../../assets/images/booking1.png"
@@ -21,7 +21,7 @@
                             alt=""
                         />
                     </div>
-                    <div class="w-[300px] ml-2 mt-1 md:ml-1">
+                    <div class="w-[320px] ml-2 mt-1 md:ml-1">
                         <p class="Poppins2">Choose Destination</p>
                         <p class="Poppins3 sm:text-[12px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -30,8 +30,8 @@
                     </div>
                 </div>
                 <!-- //? 2   -->
-                <div class="flex mt-5   sm:w-full sm:pl-[20px]" data-aos="fade-right">
-                    <div class="booking-img relative w-12 h-12 mt-2">
+                <div class="flex mt-5   sm:w-full sm:pl-[20px] pl-5 booking-step2" data-aos="fade-right">
+                    <div class="booking-img relative w-12 h-12 mt-4">
                         <img
                             class="w-12 h-12"
                             src="../../assets/images/booking2.png"
@@ -43,7 +43,7 @@
                             alt=""
                         />
                     </div>
-                    <div class="w-[300px] ml-2 mt-1 md:ml-1">
+                    <div class="w-[320px] ml-2 mt-1 md:ml-1">
                         <p class="Poppins2">Make Payment</p>
                         <p class="Poppins3 sm:text-[12px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -52,8 +52,8 @@
                     </div>
                 </div>
                 <!-- //? 3    -->
-                <div class="flex mt-5   sm:w-full sm:pl-[20px]" data-aos="fade-right">
-                    <div class="booking-img relative w-12 h-12 mt-2">
+                <div class="flex mt-5   sm:w-full sm:pl-[20px] pl-5 booking-step3"  data-aos="fade-right">
+                    <div class="booking-img relative w-12 h-12 mt-4">
                         <img
                             class="w-12 h-12"
                             src="../../assets/images/booking3.png"
@@ -65,7 +65,7 @@
                             alt=""
                         />
                     </div>
-                    <div class="w-[300px] ml-2 mt-1 md:ml-1">
+                    <div class="w-[320px] ml-2 mt-1 md:ml-1">
                         <p class="Poppins2">Reach Airport on Selected Date</p>
                         <p class="Poppins3 sm:text-[12px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -128,7 +128,7 @@
                     <p>by Robbin joseph</p>
                 </div>
                 <!-- //? icon -->
-                <div class="flex mt-5 sm:pl-[15%]">
+                <div class="flex mt-5 sm:pl-[15%] booking-img">
                     <img
                         class="mr-4"
                         src="../../assets/images/icon1.png"
@@ -236,5 +236,15 @@ export default {};
 }
 .right {
     z-index: 1;
+}
+.booking-step1:hover{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}.booking-step2:hover{
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}.booking-step3:hover{
+    background-color: #f1f1f1;
+    border-radius: 10px;
 }
 </style>

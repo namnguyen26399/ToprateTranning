@@ -1,5 +1,5 @@
 <template>
-    <div class="-mt-28 relative sm:mt-10 md:mt-10 lg:mt-10">
+    <div class="-mt-28 relative sm:-mt-30 md:mt-10 lg:mt-10">
         <Heading></Heading>
         <Content></Content>
         <Star></Star>
@@ -14,10 +14,11 @@ export default {
     components: {
         Heading,
         Content,
-        Star
+        Star,
     },
 };
 </script>
 
-<style>
+<style scoped>
+
 </style>

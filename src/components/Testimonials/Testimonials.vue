@@ -7,33 +7,68 @@
             pl-32
             mt-[200px]
             flex
-            md:pl-10
-            sm:block sm:mt-[500px]
-            sm:pl-5
+            sm:block sm:mt-[500px] sm:pl-5
+            lg:max-w-full lg:pl-0
+            md:-ml-[0px] md:pl-0
+            box-border
         "
     >
-        <div id="left" class="w-auto pr-[124px] md:mr-0 md:pr-10 sm:w-full sm:pr-5">
-            <p data-aos="fade-up" class="p1 mt-[9px] mb-2 sm:w-full sm:ml-0 ">
+        <div
+            id="left"
+            class="
+                w-auto
+                pr-[124px]
+                md:mr-0 md:pr-10
+                sm:w-full sm:pr-5
+                md:scale-75 md:w-2/5
+            "
+        >
+            <p
+                data-aos="fade-up"
+                class="
+                    p1
+                    mt-[9px]
+                    mb-2
+                    sm:w-full sm:ml-0
+                    lg:pl-10
+                    sm:text-center
+                "
+            >
                 Testimonials
             </p>
             <p
                 data-aos="fade-up"
-                class="p2 text-[50px] w-[409px] sm:text-2xl sm:w-full"
+                class="
+                    p2
+                    text-[50px]
+                    w-[409px]
+                    sm:text-2xl sm:w-full
+                    lg:pl-10
+                    sm:text-center
+                    md:text-[30px] md:w-full md:h-auto
+                "
             >
                 What people say about Us.
             </p>
         </div>
-        <div data-aos="fade-left" class="sm:mt-5 sm:ml-4">
+        <div
+            data-aos="fade-left"
+            class="sm:mt-5 sm:ml-4 lg:ml-[0px] sm:mx-auto"
+        >
+            <!-- //?page1 -->
+            <!-- 504.205 -->
             <div
+                id="slide-1"
                 class="
+                    slide
                     right
-                    pt-[28px]
                     w-[504px]
                     h-[245px]
                     bg-white
                     mike-taylor
                     relative
-                    sm:h-80 sm:w-[300px]
+                    sm:h-80 sm:w-[300px] sm:mx-auto
+                    pt-10
                 "
             >
                 <p id="mess" class="p3 pl-[34px]">
@@ -42,15 +77,17 @@
                     believed or diverted no.”
                 </p>
                 <p id="author" class="p4 mt-[34px] pl-[34px]">Mike taylor</p>
-                <p class="p5 mt-[5px] pl-[34px]">Lahore, Pakistan</p>
+                <p id="addr" class="p5 mt-[5px] pl-[34px]">Lahore, Pakistan</p>
                 <img
-                    class="absolute -left-8 -top-8"
+                    id="avatar"
+                    class="absolute -left-8 -top-8 avatar"
                     src="../../assets/images/avatar.png"
                     alt=""
                 />
             </div>
-            <div class="flex mt-11">
-                <button class="mr-[26px] ml-[200px] sm:ml-28" @click="page1">
+
+            <div class="flex mt-11 sm:justify-center">
+                <button class="mr-[26px] ml-[200px] sm:ml-0" @click="page1">
                     <img
                         id="img-page1"
                         src="../../assets/images/page1.png"
@@ -81,23 +118,31 @@ export default {
     methods: {
         page3() {
             document.getElementById("mess").innerHTML =
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.";
+                "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus“.";
             document.getElementById("img-page3").src =
                 "src/assets/images/page1.png";
             document.getElementById("img-page2").src =
                 "src/assets/images/page2.png";
             document.getElementById("img-page1").src =
                 "src/assets/images/page2.png";
+            document.getElementById("author").innerHTML = "Ng Sy Nam";
+            document.getElementById("addr").innerHTML = "Ha Noi, Viet Nam";
+            document.getElementById("avatar").src =
+                "src/assets/images/avatar3.png";
         },
         page2() {
             document.getElementById("mess").innerHTML =
-                "Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire!!!";
+                "“Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire!!!“";
             document.getElementById("img-page2").src =
                 "src/assets/images/page1.png";
             document.getElementById("img-page3").src =
                 "src/assets/images/page2.png";
             document.getElementById("img-page1").src =
                 "src/assets/images/page2.png";
+            document.getElementById("author").innerHTML = "Ng Ngoc Hai";
+            document.getElementById("addr").innerHTML = "Ha Nam, Viet Nam";
+            document.getElementById("avatar").src =
+                "src/assets/images/avatar2.png";
         },
         page1() {
             document.getElementById("mess").innerHTML =
@@ -108,6 +153,10 @@ export default {
                 "src/assets/images/page2.png";
             document.getElementById("img-page3").src =
                 "src/assets/images/page2.png";
+            document.getElementById("author").innerHTML = "Mike taylor";
+            document.getElementById("addr").innerHTML = "Lahore, Pakistan";
+            document.getElementById("avatar").src =
+                "src/assets/images/avatar.png";
         },
     },
 };

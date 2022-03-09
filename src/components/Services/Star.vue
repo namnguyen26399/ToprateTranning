@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute -top-10 right-0">
+  <div class="absolute -top-10  md: right-10">
       <img src="../../assets/images/star.png" alt="">
   </div>
 </template>

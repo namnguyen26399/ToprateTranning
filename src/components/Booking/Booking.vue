@@ -1,9 +1,9 @@
 <template>
-    <div id="booking" class="w-full h-[580px] flex mt-[168px] relative sm:block pt-[100px]  sm:block-inline">
+    <div id="booking" class="w-full h-[580px] flex mt-[168px] relative sm:block pt-[100px]  sm:block-inline sm:mt-10">
         <!-- //?left -->
         <div class="w-1/2  pl-32 md:pl-5 sm:pl-2 sm:w-full">
-            <p data-aos="flip-right" class="Poppins sm:w-full text-left sm:text-center">Easy and Fast</p>
-            <p data-aos="flip-right" class="Volkhov text-[50px] mt[15px] md:text-4xl sm:text-2xl  sm:text-center sm:w-full sm:leading-none">Book your next trip in 3 easy steps</p>
+            <p data-aos="flip-right" class="Poppins sm:w-full text-left sm:text-center md:ml-5">Easy and Fast</p>
+            <p data-aos="flip-right" class="Volkhov text-[50px] mt[15px] md:text-4xl sm:text-2xl  sm:text-center sm:w-full sm:leading-none md:ml-5">Book your next trip in 3 easy steps</p>
             <!-- //? Content -->
 
             <div id="content" class="mt-[31px]">
@@ -89,6 +89,8 @@
                 sm:hidden
                 md:mt-[170px]
                 mt-[110px]
+                md:w-[100px]
+                md:h-[100px]
             "
         ></div>
         <!-- //?right -->
@@ -108,7 +110,7 @@
                     md:-mt-3
                     sm:scale-75 
                     sm:mx-auto
-              
+                    sm:mt-0
                 "
             >
                 <!-- //? image  -->

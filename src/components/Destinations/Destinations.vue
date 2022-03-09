@@ -1,5 +1,5 @@
 <template>
-    <div class="Destinations mt-40 w-full h-auto">
+    <div class="Destinations mt-40 w-full h-auto sm:mt-10">
         <p data-aos="zoom-in" class="text-center Poppins">Top Selling</p>
         <p data-aos="zoom-in" class="Volkhov mt-2">Top Destinations</p>
         <div class="mt-14 flex flex-wrap px-auto justify-around">
@@ -109,7 +109,7 @@
                 </div>
                 <img
                     src="../../assets/images/Decore4.png"
-                    class="absolute top-32 left-[282px] md:hidden sm:hidden z-0"
+                    class="absolute top-32 left-[260px]  sm:hidden z-0 md:hidden lg:hidden"
                     alt=""
                 />
             </div>

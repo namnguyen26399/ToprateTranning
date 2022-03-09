@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute w-full  top-0 z-10 " id="Decore">
+    <div class="absolute w-full max-w-[1240px]  top-0 -z-10 " id="Decore">
         <img
             class="absolute decore1"
             src="../.././assets/images/Decore.png"
@@ -8,7 +8,7 @@
         <img class="absolute top-0 left-0" src="../.././assets/images/decore2.png" alt="" />
         <img class="absolute  decore3 md:hidden sm:hidden lg:hidden" src="../.././assets/images/decore3.png" alt="" />
     </div>
-</template>
+</template>   
 
 <script>
 export default {};

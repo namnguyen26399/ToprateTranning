@@ -1,5 +1,5 @@
 <template>
-    <div id="top-nav" class="flex w-full h-10 mt-12 relative">
+    <div id="top-nav" class="flex w-full h-10 mt-12 relative z-90">
         <!-- //!----------Logo -->
         <div id="logo" class="relative w-[20%] h-full ml-[-0px]">
             <img
@@ -34,9 +34,105 @@
                 lg:hidden
             "
         >
-            <button @click="hide" class="cursor-pointer">
+            <button @click="hide" class="cursor-pointer menufix:block absolute -right-4">
                 <img src="../../assets/images/menu.png" alt="" />
             </button>
+
+            <div
+                id="menu-down"
+                class="py-1 bg-white w-[200px] mt-[25px] z-90 rounded-md"
+                role="none"
+                data-v-20db37e3=""
+                style="display: block"
+            >
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" --><a
+                    href="#"
+                    class="
+                    border-b border-gray-100
+                        text-gray-700
+                        block
+                        px-4
+                        py-2
+                        text-sm text-center
+                        hover:bg-slate-100
+                    "
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-0"
+                    data-v-20db37e3=""
+                    >Destinations</a
+                ><a
+                    href="#"
+                    class="
+                                        border-b border-gray-100
+
+                        text-gray-700
+                        block
+                        px-4
+                        py-2
+                        text-sm text-center
+                        hover:bg-slate-300
+                    "
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-1"
+                    data-v-20db37e3=""
+                    >Hotels</a
+                ><a
+                    href="#"
+                    class="
+                                        border-b border-gray-100
+
+                        text-gray-700
+                        block
+                        px-4
+                        py-2
+                        text-sm text-center
+                        hover:bg-slate-300
+                    "
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-2"
+                    data-v-20db37e3=""
+                    >Flights</a
+                ><a
+                    href="#"
+                    class="
+                                        border-b border-gray-100
+
+                        text-gray-700
+                        block
+                        px-4
+                        py-2
+                        text-sm text-center
+                        hover:bg-slate-300
+                    "
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-2"
+                    data-v-20db37e3=""
+                    >Bookings</a
+                ><a
+                    href="#"
+                    class="
+                                        border-b border-gray-100
+
+                        text-gray-700
+                        block
+                        px-4
+                        py-2
+                        text-sm text-center
+                        hover:bg-slate-300
+                    "
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-2"
+                    data-v-20db37e3=""
+                    >Login</a
+                >
+            </div>
+
+            <!-- //? menu down -->
         </div>
         <!-- //?------------Nav-item -->
 
@@ -47,6 +143,7 @@
                 h-full
                 mr-12
                 sm:mr-0 sm:w-40 sm:absolute sm:right-0 sm:hidden
+                menufix:hidden
             "
         >
             <ul
@@ -202,7 +299,7 @@
                     "
                 >
                     <div id="Choose-language" class="flex w-auto">
-                        <p
+                        <!-- <p
                             class="
                                 line-height-40
                                 font-normal
@@ -220,7 +317,140 @@
                                 src="../../assets/images/Down.png"
                                 alt=""
                             />
-                        </button>
+                        </button> -->
+                        <!-- //? language -->
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button
+                                    @click="chooselanguage"
+                                    type="button"
+                                    class="
+                                        chosse-language
+                                        inline-flex
+                                        justify-center
+                                        w-full
+                                        rounded-md
+                                        px-4
+                                        py-[5px]
+                                        bg-none
+                                        font-normal
+                                        text-[17px] text-gray-700
+                                    "
+                                    id="menu-button"
+                                    aria-expanded="true"
+                                    aria-haspopup="true"
+                                >
+                                    EN
+                                    <svg
+                                        class="-mr-1 ml-2 h-5 w-5 mt-1"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div
+                                class="
+                                    origin-top-right
+                                    absolute
+                                    right-0
+                                    mt-2
+                                    w-56
+                                    rounded-md
+                                    bg-white
+                                "
+                                role="menu"
+                                aria-orientation="vertical"
+                                aria-labelledby="menu-button"
+                                tabindex="-1"
+                            >
+                                <div
+                                    id="language-tb"
+                                    class="py-1"
+                                    role="none"
+                                    style="display: block"
+                                >
+                                    <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                    <a
+                                        href="#"
+                                        class="
+                                                            border-b border-gray-100
+
+                                            text-gray-700
+                                            block
+                                            px-4
+                                            py-2
+                                            text-sm text-center
+                                            hover:bg-slate-100
+                                        "
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="menu-item-0"
+                                        >English</a
+                                    >
+                                    <a
+                                    
+                                        href="#"
+                                        class="
+                                                            border-b border-gray-100
+
+                                            text-gray-700
+                                            block
+                                            px-4
+                                            py-2
+                                            text-sm text-center
+                                            hover:bg-slate-300
+                                        "
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="menu-item-1"
+                                        >Vietnamese</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="
+                                                            border-b border-gray-100
+
+                                            text-gray-700
+                                            block
+                                            px-4
+                                            py-2
+                                            text-sm text-center
+                                            hover:bg-slate-300
+                                        "
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="menu-item-2"
+                                        >France</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="
+                                                            border-b border-gray-100
+
+                                            text-gray-700
+                                            block
+                                            px-4
+                                            py-2
+                                            text-sm text-center
+                                            hover:bg-slate-300
+                                        "
+                                        role="menuitem"
+                                        tabindex="-1"
+                                        id="menu-item-2"
+                                        >China</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -230,7 +460,19 @@
 
 <script>
 export default {
+    components: {},
     methods: {
+        chooselanguage() {
+            if (this.i % 2 == 0) {
+                document.getElementById("language-tb").style.display = "none";
+                this.i++;
+            } else {
+                document.getElementById("language-tb").style.display = "block";
+                this.i++;
+            }
+            console.log(this.i);
+        },
+
         more() {
             if (this.i % 2 == 0) {
                 document.getElementById("btn-more").style.transform =
@@ -244,10 +486,10 @@ export default {
         },
         hide() {
             if (this.i % 2 == 0) {
-                document.getElementById("Nav-item").style.display = "block";
+                document.getElementById("menu-down").style.display = "block";
                 this.i++;
             } else {
-                document.getElementById("Nav-item").style.display = "none";
+                document.getElementById("menu-down").style.display = "none";
                 this.i++;
             }
             console.log(this.i);
@@ -263,12 +505,13 @@ export default {
 
 <style  scoped>
 a:hover {
-    color: blue;
+    color: #006eff;
     /* transform: scaleY(1.5); */
 }
 .sign-up:hover {
-    background-color: rgb(0, 153, 255);
+    background-color: #006eff;
     color: rgb(255, 255, 255);
+    transition: 0.4s;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
@@ -283,12 +526,15 @@ a:hover {
     }
 }
 a:hover {
-    color: rgb(0, 68, 255);
+    color: #006eff;
+    transition: 0.2s;
 }
-.menuitem2:hover {
-    transform: scale(1.5);
-}
+
 .logo:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.chosse-language:hover .language-tb {
+    display: block;
 }
 </style>

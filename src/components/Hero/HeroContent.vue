@@ -1,8 +1,8 @@
 <template>
-    <div id="Desc" class="mt-44 pl-32 w-full h-770px relative  flex md:pl-16 sm:pl-4  ">
+    <div id="Desc" class="mt-44 pl-32 w-full h-770px relative  flex md:pl-16 sm:pl-4  z-0">
         <div class="w-1/2">
             <div id="Text" class="" style=" height: 540px ">
-                <div id="tagline" class="poppins max-w-[410px] sm:mt-[-100px]">
+                <div id="tagline" class="poppins max-w-[410px] sm:mt-[-100px] lg:mb-5">
                     Best Destinations around the world
                 </div>
                 <div id="heading" class="volkhov max-w-[545px] md:text-[55px] sm:text-[40px] sm:leading-none"  >
@@ -20,7 +20,7 @@
                     >
                         Find out more
                     </button>
-                    <div id="btn-play-block" class="w-40 h-12 flex ml-11 sm:ml-0  img-demo ">
+                    <div id="btn-play-block" class="w-40 h-12 flex ml-11 sm:ml-0  img-demo btn-demo cursor-pointer">
                         <button id="btn-play" class="h-full w-12 play-shadow md:scale-90 sm:scale-75   img-demo  ">
                             <img
                                 class="w-4 h-4 ml-4 img-demo"
@@ -29,7 +29,7 @@
                             />
                         </button>
                         <p
-                            class="text-4 font-normal my-auto ml-5 sm:ml-0 btn-demo"
+                            class="text-4 font-normal my-auto ml-5 sm:ml-0 btn-demo cursor-pointer"
                             style="font-family: Poppins ; color:#686D77"
                         >
                             Play Demo
@@ -39,9 +39,9 @@
             </div>
         </div>
 
-        <div id="Image" class="relative w-[50%]">
+        <div id="Image" class="relative w-[50%] ">
             <img
-                class=" ani1 sm:mt-20 "
+                class=" ani1 sm:-mt-20 "
                 src="../.././assets/images/Traveller1.png"
                 alt=""
             />
@@ -134,7 +134,7 @@ export default {};
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
-    color: #df6951;
+    color: #df8a79;
 }
 .volkhov {
     font-family: Volkhov;
@@ -159,20 +159,19 @@ export default {};
     border-radius: 10px;
 }
 #btn-play {
-    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.25);
     border-radius: 10px;
 }
 #btn-play {
-    background-color: #df6951;
+    background-color: #e7b1a6;
     border-radius:50px;
 }
 .play-shadow{
     box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
 }
-.img-demo:hover  .btn-demo{
-    color:red;
-    transform: scale(1.3);
-}
+.btn-demo:hover #btn-play{
+    background-color: rgb(253, 55, 55);
+} 
 #btn-play:hover{
     background-color: rgb(253, 55, 55);
 }

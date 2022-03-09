@@ -34,7 +34,10 @@
                 lg:hidden
             "
         >
-            <button @click="hide" class="cursor-pointer menufix:block absolute -right-4">
+            <button
+                @click="hide"
+                class="cursor-pointer menufix:block absolute -right-4"
+            >
                 <img src="../../assets/images/menu.png" alt="" />
             </button>
 
@@ -43,12 +46,12 @@
                 class="py-1 bg-white w-[200px] mt-[25px] z-90 rounded-md"
                 role="none"
                 data-v-20db37e3=""
-                style="display: block"
+                style="display: none"
             >
                 <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" --><a
                     href="#"
                     class="
-                    border-b border-gray-100
+                        border-b border-gray-100
                         text-gray-700
                         block
                         px-4
@@ -64,8 +67,7 @@
                 ><a
                     href="#"
                     class="
-                                        border-b border-gray-100
-
+                        border-b border-gray-100
                         text-gray-700
                         block
                         px-4
@@ -81,8 +83,7 @@
                 ><a
                     href="#"
                     class="
-                                        border-b border-gray-100
-
+                        border-b border-gray-100
                         text-gray-700
                         block
                         px-4
@@ -98,8 +99,7 @@
                 ><a
                     href="#"
                     class="
-                                        border-b border-gray-100
-
+                        border-b border-gray-100
                         text-gray-700
                         block
                         px-4
@@ -115,8 +115,7 @@
                 ><a
                     href="#"
                     class="
-                                        border-b border-gray-100
-
+                        border-b border-gray-100
                         text-gray-700
                         block
                         px-4
@@ -376,14 +375,13 @@
                                     id="language-tb"
                                     class="py-1"
                                     role="none"
-                                    style="display: block"
+                                    style="display: none"
                                 >
                                     <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
                                     <a
                                         href="#"
                                         class="
-                                                            border-b border-gray-100
-
+                                            border-b border-gray-100
                                             text-gray-700
                                             block
                                             px-4
@@ -397,11 +395,9 @@
                                         >English</a
                                     >
                                     <a
-                                    
                                         href="#"
                                         class="
-                                                            border-b border-gray-100
-
+                                            border-b border-gray-100
                                             text-gray-700
                                             block
                                             px-4
@@ -417,8 +413,7 @@
                                     <a
                                         href="#"
                                         class="
-                                                            border-b border-gray-100
-
+                                            border-b border-gray-100
                                             text-gray-700
                                             block
                                             px-4
@@ -434,8 +429,7 @@
                                     <a
                                         href="#"
                                         class="
-                                                            border-b border-gray-100
-
+                                            border-b border-gray-100
                                             text-gray-700
                                             block
                                             px-4
@@ -464,10 +458,10 @@ export default {
     methods: {
         chooselanguage() {
             if (this.i % 2 == 0) {
-                document.getElementById("language-tb").style.display = "none";
+                document.getElementById("language-tb").style.display = "block";
                 this.i++;
             } else {
-                document.getElementById("language-tb").style.display = "block";
+                document.getElementById("language-tb").style.display = "none";
                 this.i++;
             }
             console.log(this.i);

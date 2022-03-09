@@ -1,27 +1,71 @@
 <template>
-    <div id="Desc" class="mt-44 pl-32 w-full h-770px relative  flex md:pl-16 sm:pl-4  z-0">
+    <div
+        id="Desc"
+        class="mt-44 pl-32 w-full h-770px relative flex md:pl-16 sm:pl-4 z-0"
+    >
         <div class="w-1/2">
-            <div id="Text" class="" style=" height: 540px ">
-                <div id="tagline" class="poppins max-w-[410px] sm:mt-[-100px] lg:mb-5">
+            <div id="Text" class="" style="height: 540px">
+                <div
+                    id="tagline"
+                    class="poppins max-w-[410px] sm:mt-[-100px] lg:mb-5"
+                >
                     Best Destinations around the world
                 </div>
-                <div id="heading" class="volkhov max-w-[545px] md:text-[55px] sm:text-[40px] sm:leading-none"  >
+                <div
+                    id="heading"
+                    class="
+                        volkhov
+                        max-w-[545px]
+                        md:text-[55px]
+                        sm:text-[40px] sm:leading-none
+                    "
+                >
                     Travel, enjoy and live a new and full life
                 </div>
-                <div id="desc" class=" max-w-[477px]">
+                <div id="desc" class="max-w-[477px]">
                     Built Wicket longer admire do barton vanity itself do in it.
                     Preferred to sportsmen it engrossed listening. Park gate
                     sell they west hard for the.
                 </div>
-                <div class="flex mt-9  sm:w-64 " style="">
+                <div class="flex mt-9 sm:w-64" style="">
                     <button
                         id="btn-fomore"
-                        class="py-auto px-7 text-white w-40 h-12 md:scale-90 sm:scale-75 sm:-ml-5"
+                        class="
+                            py-auto
+                            px-7
+                            text-white
+                            w-40
+                            h-12
+                            md:scale-90
+                            sm:scale-75 sm:-ml-5
+                        "
                     >
                         Find out more
                     </button>
-                    <div id="btn-play-block" class="w-40 h-12 flex ml-11 sm:ml-0  img-demo btn-demo cursor-pointer">
-                        <button id="btn-play" class="h-full w-12 play-shadow md:scale-90 sm:scale-75   img-demo  ">
+                    <div
+                        id="btn-play-block"
+                        class="
+                            w-40
+                            h-12
+                            flex
+                            ml-11
+                            sm:ml-0
+                            img-demo
+                            btn-demo
+                            cursor-pointer
+                        "
+                    >
+                        <button
+                            id="btn-play"
+                            class="
+                                h-full
+                                w-12
+                                play-shadow
+                                md:scale-90
+                                sm:scale-75
+                                img-demo
+                            "
+                        >
                             <img
                                 class="w-4 h-4 ml-4 img-demo"
                                 src="../.././assets/images/Polygon.png"
@@ -29,8 +73,16 @@
                             />
                         </button>
                         <p
-                            class="text-4 font-normal my-auto ml-5 sm:ml-0 btn-demo cursor-pointer"
-                            style="font-family: Poppins ; color:#686D77"
+                            class="
+                                text-4
+                                font-normal
+                                my-auto
+                                ml-5
+                                sm:ml-0
+                                btn-demo
+                                cursor-pointer
+                            "
+                            style="font-family: Poppins; color: #686d77"
                         >
                             Play Demo
                         </p>
@@ -39,9 +91,9 @@
             </div>
         </div>
 
-        <div id="Image" class="relative w-[50%] ">
+        <div id="Image" class="relative w-[50%]">
             <img
-                class=" ani1 sm:-mt-20 "
+                class="ani1 sm:-mt-20"
                 src="../.././assets/images/Traveller1.png"
                 alt=""
             />
@@ -51,7 +103,7 @@
                 alt=""
             />
             <img
-                class="absolute plane2  w-1/6 sm:mt-10"
+                class="absolute plane2 w-1/6 sm:mt-10"
                 src="../.././assets/images/plane2.png"
                 alt=""
             />
@@ -67,17 +119,14 @@ export default {};
 #Image {
     width: 765px;
     height: 765px;
-
 }
 .plane1 {
     top: 7%;
     left: 20%;
 }
 .plane2 {
-
     top: 10%;
     left: 83%;
-
 }
 
 #tagline {
@@ -164,15 +213,15 @@ export default {};
 }
 #btn-play {
     background-color: #e7b1a6;
-    border-radius:50px;
+    border-radius: 50px;
 }
-.play-shadow{
+.play-shadow {
     box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
 }
-.btn-demo:hover #btn-play{
+.btn-demo:hover #btn-play {
     background-color: rgb(253, 55, 55);
-} 
-#btn-play:hover{
+}
+#btn-play:hover {
     background-color: rgb(253, 55, 55);
 }
 </style>

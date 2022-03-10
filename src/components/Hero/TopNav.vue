@@ -668,16 +668,17 @@ export default {
 
         },
         open() {
-            if (this.i % 2 == 0) {
+            
+            if (this.j % 2 == 0) {
                 document.getElementById("choose-lang-drop-down").style.display =
                     "block";
-                this.i++;
+                this.j++;
             } else {
                 document.getElementById("choose-lang-drop-down").style.display =
                     "none";
-                this.i++;
+                this.j++;
             }
-            console.log(this.i);
+            console.log("j"+this.j);
         },
     },
     data() {
@@ -688,6 +689,7 @@ export default {
             en: 0,
             en1: 0,
             islangopen: true,
+            j:0,
         };
     },
 };

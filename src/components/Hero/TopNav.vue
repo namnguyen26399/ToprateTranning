@@ -16,8 +16,7 @@
                     z-20
                     bottom-0.5
                     md:left-[28px]
-                    sm:left-[29px]
-                    sm:h-[28px]
+                    sm:left-[29px] sm:h-[28px]
                 "
                 src="../.././assets/images/logo.png"
                 alt=""
@@ -152,6 +151,25 @@
                 ><a
                     href="#"
                     class="
+                        text-gray-700
+                        block
+                        px-4
+                        py-2
+                        text-sm text-center
+                        hover:bg-slate-300
+                        border-b border-gray-100
+                    "
+                    role="menuitem"
+                    tabindex="-1"
+                    id="menu-item-2"
+                    data-v-20db37e3=""
+                    >Login</a
+                ><a
+                    @click="open"
+                    id="choose-lang-menu-down"
+                    href="#"
+                    class="
+                        relative
                         border-gray-100
                         text-gray-700
                         block
@@ -160,13 +178,96 @@
                         text-sm text-center
                         hover:bg-slate-300
                         border-b-0
+                        cursor-pointer
                     "
                     role="menuitem"
                     tabindex="-1"
-                    id="menu-item-2"
                     data-v-20db37e3=""
-                    >Login</a
-                >
+                    >EN
+                    <div
+                        id="choose-lang-drop-down"
+                        style="display: none"
+                        class="
+                            absolute
+                            left-[100%]
+                            w-56
+                            h-auto
+                            rounded-md
+                            bg-white
+                            sm:w-[60%]
+                        "
+                    >
+                        <div class="py-0" role="none" style="display: block">
+                            <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                            <a
+                                href="#"
+                                class="
+                                    border-b border-gray-100
+                                    text-gray-700
+                                    block
+                                    px-4
+                                    py-2
+                                    text-sm text-left
+                                    hover:bg-slate-100
+                                "
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-0"
+                                >English</a
+                            >
+                            <a
+                                href="#"
+                                class="
+                                    border-b border-gray-100
+                                    text-gray-700
+                                    block
+                                    px-4
+                                    py-2
+                                    text-sm text-left
+                                    hover:bg-slate-300
+                                "
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-1"
+                                >Vietnamese</a
+                            >
+                            <a
+                                href="#"
+                                class="
+                                    border-b border-gray-100
+                                    text-gray-700
+                                    block
+                                    px-4
+                                    py-2
+                                    text-sm text-left
+                                    hover:bg-slate-300
+                                "
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-2"
+                                >France</a
+                            >
+                            <a
+                                href="#"
+                                class="
+                                    border-b border-gray-100
+                                    text-gray-700
+                                    block
+                                    px-4
+                                    py-2
+                                    text-sm text-left
+                                    hover:bg-slate-300
+                                "
+                                role="menuitem"
+                                tabindex="-1"
+                                id="menu-item-2"
+                                >China</a
+                            >
+                        </div>
+                    </div>
+                </a>
+
+                <!-- //? choose language menu drop -->
             </div>
             <div
                 style="display: none"
@@ -508,12 +609,14 @@ export default {
     components: {},
     methods: {
         chooselanguage() {
-            if (this.i % 2 == 0) {
+            if (this.en % 2 == 0) {
                 document.getElementById("language-tb").style.display = "block";
-                this.i++;
+                this.en++;
+                this.islangopen = true;
             } else {
                 document.getElementById("language-tb").style.display = "none";
-                this.i++;
+                this.en++;
+                this.islangopen = false;
             }
             console.log(this.i);
         },
@@ -534,7 +637,7 @@ export default {
                 document.getElementById("menu-down").style.display = "block";
                 document.getElementById("bg-right").style.display = "block";
                 this.isOpen = true;
-                this.bgROpen =true;
+                this.bgROpen = true;
                 this.i++;
             } else {
                 document.getElementById("menu-down").style.display = "none";
@@ -550,19 +653,41 @@ export default {
             this.i++;
         },
         windowClick(event) {
-            if (this.isOpen && event.target == document.getElementById("bg-right"))
+            if (
+                this.isOpen &&
+                event.target == document.getElementById("bg-right")
+            )
                 document.getElementById("menu-down").style.display = "none";
-            // document.getElementById("bg-right").style.display = "none";
-             if (this.bgROpen && event.target == document.getElementById("bg-right"))
+
+            if (
+                this.bgROpen &&
+                event.target == document.getElementById("bg-right")
+            )
                 document.getElementById("bg-right").style.display = "none";
-                this.i = 0;
+            this.i = 0;
+
+        },
+        open() {
+            if (this.i % 2 == 0) {
+                document.getElementById("choose-lang-drop-down").style.display =
+                    "block";
+                this.i++;
+            } else {
+                document.getElementById("choose-lang-drop-down").style.display =
+                    "none";
+                this.i++;
+            }
+            console.log(this.i);
         },
     },
     data() {
         return {
             i: 0,
             isOpen: false,
-            bgROpen:false
+            bgROpen: false,
+            en: 0,
+            en1: 0,
+            islangopen: true,
         };
     },
 };

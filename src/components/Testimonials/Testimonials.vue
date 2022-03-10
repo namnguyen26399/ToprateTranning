@@ -11,6 +11,8 @@
             lg:max-w-full lg:pl-0
             md:-ml-[0px] md:pl-0
             box-border
+            lg:justify-center
+            lgs:justify-center
         "
     >
         <div

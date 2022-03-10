@@ -15,7 +15,7 @@
         "
     >
         <div class="flex sm:flex-wrap justify-around md:w-screen md:flex-wrap">
-            <div class="ml-32 sm:w-full sm:ml-0 lg:ml-[65px] md:ml-10">
+            <div class="ml-32 sm:w-full sm:ml-0 lg:ml-[0px] md:ml-10">
                 <p class="p1 sm:w-full sm:text-center">Jadoo.</p>
                 <p class="p2 w-[207px] h-[48px] mt-[19px] sm:mx-auto sm:mt-2">
                     Book your trip in minute, get full Control for much longer.

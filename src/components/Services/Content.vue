@@ -113,7 +113,7 @@
         <!-- //? item 1 -->
         <div
             id="category1"
-            class="category w-[200px] h-[314px] mt-20"
+            class="category w-[200px] h-[314px] mt-20 sm:mt-10"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />

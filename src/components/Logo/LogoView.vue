@@ -14,13 +14,13 @@
     >
         <img
             data-aos="fade-up"
-            class="logo-item lgs:px-4 ml-[0px] mr-[40px] md:mr-7 sm:mx-5 md:ml-[-60px] "
+            class="logo-item lgs:px-4 ml-[0px] mr-[40px] md:mr-7 sm:mx-5 md:ml-[-60px]  sm:w-[68px] sm:h-[102px]"
             src="../../assets/images/logo1.png"
             alt=""
         />
         <img
             data-aos="fade-up"
-            class="mr-[40px] md:mr-7 sm:mx-5 logo-item lgs:px-4"
+            class="mr-[40px] md:mr-7 sm:mx-5 logo-item lgs:px-4 sm:w-[100px]"
             src="../../assets/images/logo2.png"
             alt=""
         />
@@ -32,13 +32,13 @@
         />
         <img
             data-aos="fade-up"
-            class="w-[162px] h-8 mr-[99px] md:mr-7 sm:mx-5 sm:mt-10 md:ml-6 logo-item lgs:px-4  lgs:h-20 lgs:py-4"
+            class=" w-[190px] mr-[40px] h-8 ml-5 md:mr-7 sm:mx-5  md:ml-6 logo-item lgs:px-4  lgs:h-20 lgs:py-4 sm:mt-0"
             src="../../assets/images/logo4.png"
             alt=""
         />
         <img
             data-aos="fade-up"
-            class="w-[94px] h-[21px] sm:mx-5 sm:mt-10 logo-item lgs:px-4 lgs:h-16 lgs:py-4 lgs:w-48"
+            class="w-[94px] h-[21px] sm:mx-5 logo-item lgs:px-4 lgs:h-16 lgs:py-4 lgs:w-48 sm:mt-0"
             src="../../assets/images/logo5.png"
             alt=""
         />

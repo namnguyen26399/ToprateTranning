@@ -1,7 +1,7 @@
 <template>
     <div class="" data-aos="zoom-in">
         <p class="text-center poppin text-18 font-semibold">CATEGORY</p>
-        <p class="text-center scroll-mt-2.5 Volkhov text-5xl font-bold">We Offer Best Services</p>
+        <p class="text-center scroll-mt-2.5 Volkhov text-5xl font-bold sm:text-[2rem]">We Offer Best Services</p>
     </div>
 </template>
 

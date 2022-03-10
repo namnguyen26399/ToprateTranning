@@ -1,10 +1,8 @@
+
 <template>
-    <div class="absolute w-full max-w-[1240px]  top-0 -z-10 right-0 " id="Decore">
-        <img
-            class="absolute decore1"
-            src="../.././assets/images/Decore.png"
-            alt=""
-        />
+    <div class="absolute w-full max-w-[1240px]  top-0 -z-10 left-0 " id="Decore2">
+
+        <img class="absolute top-0 left-0" src="../.././assets/images/decore2.png" alt="" />
     </div>
 </template>   
 

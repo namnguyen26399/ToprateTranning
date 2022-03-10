@@ -3,9 +3,13 @@ module.exports = {
     theme: {
         extend: {},
         screens: {
+
             sm: { min: "320px", max: "768px" },
+            ip12: { min: "350px", max: "450px" },
+            btndemo: { min: "500px", max: "768px" },
+
             // => @media (min-width: 640px and max-width: 767px) { ... }
-            menufix: { min: "750px",max:"860px" },
+            menufix: { min: "750px", max: "860px" },
 
             md: { min: "769px", max: "1024px" },
             // => @media (min-width: 768px and max-width: 1023px) { ... }

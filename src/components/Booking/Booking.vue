@@ -94,7 +94,7 @@
             "
         ></div>
         <!-- //?right -->
-        <div class="relative right-[200px] right z-30 w-[370px] h-[400px] md:right-[90px] md:mt-[150px] sm:mx-auto  sm:w-full  sm:right-0"  data-aos="fade-down">
+        <div class="relative right-[200px] right z-30 w-[370px] h-[400px] md:right-[90px] md:mt-[150px] sm:mx-auto  sm:w-full  sm:right-0 "  data-aos="fade-down">
             <div
                 class="
                 bg-white
@@ -106,11 +106,11 @@
                     booking-right
                     pl-[25px]
                     z-30
-                    md:scale-[70%]
-                    md:-mt-3
+                    md:scale-[90%]
                     sm:scale-75 
                     sm:mx-auto
                     sm:mt-0
+                    md:mt-[-30px]
                 "
             >
                 <!-- //? image  -->

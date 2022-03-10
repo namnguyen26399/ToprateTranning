@@ -1,7 +1,9 @@
 <template>
     <div class="Destinations mt-40 w-full h-auto sm:mt-10">
         <p data-aos="zoom-in" class="text-center Poppins">Top Selling</p>
-        <p data-aos="zoom-in" class="Volkhov mt-2">Top Destinations</p>
+        <p data-aos="zoom-in" class="Volkhov mt-2 text-[50px] sm:text-[30px]">
+            Top Destinations
+        </p>
         <div class="mt-14 flex flex-wrap px-auto justify-around">
             <!-- //? item 1 -->
             <div class="relative" data-aos="fade-up">
@@ -109,9 +111,55 @@
                 </div>
                 <img
                     src="../../assets/images/Decore4.png"
-                    class="absolute top-32 left-[260px]  sm:hidden z-0 md:hidden lg:hidden"
+                    class="
+                        absolute
+                        top-32
+                        left-[260px]
+                        sm:hidden
+                        z-0
+                        md:hidden
+                        lg:hidden
+                    "
                     alt=""
                 />
+            </div>
+            <!-- //? item4   -->
+            <div
+                class="relative md:block lg:hidden lgs:hidden sm:hidden"
+                data-aos="fade-up"
+            >
+                <div
+                    class="
+                        destinations-item
+                        w-[300px]
+                        destinations-item2
+                        relative
+                    "
+                >
+                    <div
+                        class="
+                            bg-white
+                            h-[130px]
+                            absolute
+                            w-full
+                            top-[351px]
+                            content
+                        "
+                    >
+                        <div class="position pl-5 mt-8">
+                            <p class="inline-block pos">Rome, Italty</p>
+                            <p class="inline-block cost">$5,42k</p>
+                        </div>
+                        <div class="mt-5">
+                            <img
+                                class="inline-block ml-5 mr-6"
+                                src="../../assets/images/Vector1.png"
+                                alt=""
+                            />
+                            <p class="inline-block number-days">10 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -138,7 +186,6 @@ export default {};
     font-family: Volkhov;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
     line-height: 64px;
     /* identical to box height */
 

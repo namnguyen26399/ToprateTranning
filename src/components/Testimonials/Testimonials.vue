@@ -129,6 +129,7 @@ export default {
             document.getElementById("addr").innerHTML = "Ha Noi, Viet Nam";
             document.getElementById("avatar").src =
                 "src/assets/images/avatar3.png";
+                
         },
         page2() {
             document.getElementById("mess").innerHTML =

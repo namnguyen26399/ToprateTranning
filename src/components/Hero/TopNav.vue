@@ -1,6 +1,10 @@
 <template>
-    <div id="top-nav" class="flex w-full h-10 mt-12 relative z-90">
-        <!-- //!----------Logo -->
+    <div
+        @click="windowClick"
+        id="top-nav"
+        class="flex w-full h-10 mt-12 relative z-90"
+    >
+        <!-- //?----------Logo -->
         <div id="logo" class="relative w-[20%] h-full ml-[-0px]">
             <img
                 class="
@@ -13,6 +17,7 @@
                     bottom-0.5
                     md:left-[28px]
                     sm:left-[29px]
+                    sm:h-[28px]
                 "
                 src="../.././assets/images/logo.png"
                 alt=""
@@ -32,25 +37,57 @@
                 top-2
                 md:hidden
                 lg:hidden
+                sm:mr-0
             "
         >
             <button
                 @click="hide"
-                class="cursor-pointer menufix:block absolute -right-4"
+                class="cursor-pointer menufix:block absolute -right-0 w-6 h-6"
             >
-                <img src="../../assets/images/menu.png" alt="" />
+                <img
+                    class="w-6 h-6"
+                    src="../../assets/images/menu.png"
+                    alt=""
+                />
             </button>
 
             <div
                 id="menu-down"
-                class="py-1 bg-white w-[200px] mt-[25px] z-90 rounded-md"
+                class="
+                    bg-white
+                    w-[60%]
+                    z-90
+                    rounded-md
+                    h-screen
+                    fixed
+                    top-0
+                    left-0
+                    mt-0
+                "
                 role="none"
                 data-v-20db37e3=""
                 style="display: none"
             >
-                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" --><a
+                <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                <button
+                    @click="closeMenu"
+                    class="
+                        absolute
+                        top-0
+                        right-0
+                        w-10
+                        h-6
+                        cursor-pointer
+                        font-medium
+                        text-[20px]
+                    "
+                >
+                    X
+                </button>
+                <a
                     href="#"
                     class="
+                        mt-10
                         border-b border-gray-100
                         text-gray-700
                         block
@@ -115,13 +152,14 @@
                 ><a
                     href="#"
                     class="
-                        border-b border-gray-100
+                        border-gray-100
                         text-gray-700
                         block
                         px-4
                         py-2
                         text-sm text-center
                         hover:bg-slate-300
+                        border-b-0
                     "
                     role="menuitem"
                     tabindex="-1"
@@ -130,6 +168,20 @@
                     >Login</a
                 >
             </div>
+            <div
+                style="display: none"
+                id="bg-right"
+                class="
+                    fixed
+                    top-0
+                    right-0
+                    h-screen
+                    w-[40%]
+                    opacity-50
+                    z-0
+                    bg-gray-200
+                "
+            ></div>
 
             <!-- //? menu down -->
         </div>
@@ -329,7 +381,6 @@
                                         justify-center
                                         w-full
                                         rounded-md
-                                        px-4
                                         py-[5px]
                                         bg-none
                                         font-normal
@@ -373,7 +424,7 @@
                             >
                                 <div
                                     id="language-tb"
-                                    class="py-1"
+                                    class="py-0"
                                     role="none"
                                     style="display: none"
                                 >
@@ -481,17 +532,37 @@ export default {
         hide() {
             if (this.i % 2 == 0) {
                 document.getElementById("menu-down").style.display = "block";
+                document.getElementById("bg-right").style.display = "block";
+                this.isOpen = true;
+                this.bgROpen =true;
                 this.i++;
             } else {
                 document.getElementById("menu-down").style.display = "none";
+                document.getElementById("bg-right").style.display = "none";
+                this.isOpen = false;
                 this.i++;
             }
             console.log(this.i);
+        },
+        closeMenu() {
+            document.getElementById("menu-down").style.display = "none";
+            document.getElementById("bg-right").style.display = "none";
+            this.i++;
+        },
+        windowClick(event) {
+            if (this.isOpen && event.target == document.getElementById("bg-right"))
+                document.getElementById("menu-down").style.display = "none";
+            // document.getElementById("bg-right").style.display = "none";
+             if (this.bgROpen && event.target == document.getElementById("bg-right"))
+                document.getElementById("bg-right").style.display = "none";
+                this.i = 0;
         },
     },
     data() {
         return {
             i: 0,
+            isOpen: false,
+            bgROpen:false
         };
     },
 };
@@ -500,12 +571,14 @@ export default {
 <style  scoped>
 a:hover {
     color: #006eff;
+
     /* transform: scaleY(1.5); */
 }
 .sign-up:hover {
     background-color: #006eff;
     color: rgb(255, 255, 255);
     transition: 0.4s;
+    border: none;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {

@@ -7,7 +7,13 @@
             <div id="Text" class="" style="height: 540px">
                 <div
                     id="tagline"
-                    class="poppins max-w-[410px] sm:mt-[-100px] lg:mb-5"
+                    class="
+                        poppins
+                        max-w-[410px]
+                        sm:mt-[-100px]
+                        lg:mb-5
+                        sm:w-[240px]
+                    "
                 >
                     Best Destinations around the world
                 </div>
@@ -17,7 +23,7 @@
                         volkhov
                         max-w-[545px]
                         md:text-[55px]
-                        sm:text-[40px] sm:leading-none
+                        sm:text-[30px] sm:leading-none sm:w-[230px]
                     "
                 >
                     Travel, enjoy and live a new and full life
@@ -27,7 +33,15 @@
                     Preferred to sportsmen it engrossed listening. Park gate
                     sell they west hard for the.
                 </div>
-                <div class="flex mt-9 sm:w-64" style="">
+                <div
+                    class="
+                        flex
+                        mt-9
+                        sm:w-screen sm:mx-auto sm:justify-center
+                        btndemo:justify-start
+                    "
+                    style=""
+                >
                     <button
                         id="btn-fomore"
                         class="
@@ -91,19 +105,19 @@
             </div>
         </div>
 
-        <div id="Image" class="relative w-[50%]">
+        <div id="Image" class="relative w-[50%] ip12:mt-10">
             <img
-                class="ani1 sm:-mt-20"
+                class="ani1 sm:-mt-20 "
                 src="../.././assets/images/Traveller1.png"
                 alt=""
             />
             <img
-                class="absolute plane1 w-1/6 sm:mt-10"
+                class="absolute plane1 w-1/6 sm:mt-30"
                 src="../.././assets/images/plane1.png"
                 alt=""
             />
             <img
-                class="absolute plane2 w-1/6 sm:mt-10"
+                class="absolute plane2 w-1/6 sm:mt-30"
                 src="../.././assets/images/plane2.png"
                 alt=""
             />
@@ -204,11 +218,11 @@ export default {};
 }
 #btn-fomore {
     background: #f1a501;
-    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    box-shadow: 0px 20px 35px rgba(160, 160, 159, 0.15);
     border-radius: 10px;
 }
 #btn-play {
-    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.25);
+    box-shadow: 0px 20px 35px rgba(184, 184, 184, 0.25);
     border-radius: 10px;
 }
 #btn-play {

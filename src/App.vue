@@ -1,15 +1,20 @@
-s
-
 
 <template>
     <div
         id="container"
-        class="max-w-[1240px] md:overflow-hidden sm:overflow-hidden lg:overflow-hidden"
+        class="
+            max-w-[1240px]
+            md:overflow-hidden
+            sm:overflow-hidden
+            lg:overflow-hidden
+            
+        "
     >
+        <Decore></Decore>
+        <Decore2></Decore2>
         <div id="Hero" class="sm:h-auto max-w-[1240px]">
             <TopNav></TopNav>
             <HeroContent></HeroContent>
-            <Decore></Decore>
         </div>
         <ServicesLayout class="mt-32"></ServicesLayout>
         <Destinations class="h-auto"></Destinations>
@@ -17,15 +22,7 @@ s
         <Testimonials></Testimonials>
         <LogoView class="sm:mt-[300px]"></LogoView>
         <Subscribe class=""></Subscribe>
-        <Footer class="md:scale-75 md:ml-[-150px]"></Footer>
-
-        <!-- <ServicesLayout></ServicesLayout>
-        <Destinations></Destinations>
-        <Booking></Booking>
-        <Testimonials></Testimonials>
-        <LogoView></LogoView>
-        <Subscribe></Subscribe>
-        <Footer></Footer> -->
+        <Footer class="md:w-screen"></Footer>
     </div>
 </template>
 
@@ -33,6 +30,7 @@ s
 import TopNav from "./components/Hero/TopNav.vue";
 import HeroContent from "./components/Hero/HeroContent.vue";
 import Decore from "./components/Hero/Decore.vue";
+import Decore2 from "./components/Hero/Decore2.vue";
 import ServicesLayout from "./components/Services/ServicesLayout.vue";
 import Destinations from "./components/Destinations/Destinations.vue";
 import Booking from "./components/Booking/Booking.vue";
@@ -40,11 +38,13 @@ import Testimonials from "./components/Testimonials/Testimonials.vue";
 import LogoView from "./components/Logo/LogoView.vue";
 import Subscribe from "./components/Subs/Subscribe.vue";
 import Footer from "./components/Footer/Footer.vue";
+
 export default {
     components: {
         TopNav,
         HeroContent,
         Decore,
+        Decore2,
         ServicesLayout,
         Destinations,
         Booking,

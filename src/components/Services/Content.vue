@@ -1,9 +1,9 @@
 <template>
-    <div id="content" class="flex mt-16 flex-wrap px-auto justify-around">
+    <div id="content" class="flex mt-16 flex-wrap px-auto justify-around sm:mt-0">
         <!-- //? item 1 -->
         <div
             id="category1"
-            class="category w-[200px] h-[314px] mt-20"
+            class="category w-[200px] h-[314px] mt-20 sm:mt-10"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />
@@ -37,7 +37,7 @@
         <!-- //? item 22222222222222222222222222222222222222222 -->
         <div
             id="category1"
-            class="item2 category w-[200px] h-[314px] mt-20 relative z-30"
+            class="item2 category w-[200px] h-[314px] mt-20 relative z-30 sm:mt-10"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />
@@ -71,7 +71,7 @@
                 Built Wicket longer admire do barton vanity itself do in it.
             </p>
             <img
-                class="absolute z-0 -bottom-10 -left-12"
+                class="absolute z-0 -bottom-10 -left-12 sm:hidden"
                 src="../../assets/images/rectangle2.png"
                 alt=""
             />
@@ -79,7 +79,7 @@
         <!-- //? item 1 -->
         <div
             id="category1"
-            class="category w-[200px] h-[314px] mt-20"
+            class="category w-[200px] h-[314px] mt-20 sm:mt-10"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />
@@ -191,5 +191,8 @@ export default {
 .item2 {
     border-bottom-left-radius: 36px;
     border-bottom-right-radius: 36px;
+}
+*{
+    transition-duration: 2s;
 }
 </style>

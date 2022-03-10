@@ -10,7 +10,7 @@
             max-w-[1240px]
             lg:overflow-hidden
             md:w-screen
-            sm:h-[800px]
+            sm:h-[600px]
             sm:px-4
         "
     >

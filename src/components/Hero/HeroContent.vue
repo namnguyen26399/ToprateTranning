@@ -105,7 +105,7 @@
             </div>
         </div>
 
-        <div id="Image" class="relative w-[50%] ip12:mt-10">
+        <div id="Image" class="relative w-[50%] ip12:mt-10 sm:z-0">
             <img
                 class="ani1 sm:-mt-20 "
                 src="../.././assets/images/Traveller1.png"

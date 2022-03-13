@@ -86,6 +86,20 @@
                     src="../../assets/images/avatar.png"
                     alt=""
                 />
+                <img
+                    style="display: none"
+                    id="avatar2"
+                    class="absolute -left-8 -top-8 avatar"
+                    src="../../assets/images/avatar2.png"
+                    alt=""
+                />
+                <img
+                    style="display: none"
+                    id="avatar3"
+                    class="absolute -left-8 -top-8 avatar"
+                    src="../../assets/images/avatar3.png"
+                    alt=""
+                />
             </div>
 
             <div class="flex mt-11 sm:justify-center">
@@ -95,17 +109,35 @@
                         src="../../assets/images/page1.png"
                         alt=""
                     />
+                    <img
+                        style="display: none"
+                        id="img-page1-none"
+                        src="../../assets/images/page2.png"
+                        alt=""
+                    />
                 </button>
                 <button class="mr-[26px]" @click="page2">
                     <img
+                        style="display: none"
                         id="img-page2"
+                        src="../../assets/images/page1.png"
+                        alt=""
+                    />
+                    <img
+                        id="img-page2-none"
                         src="../../assets/images/page2.png"
                         alt=""
                     />
                 </button>
                 <button @click="page3">
                     <img
+                        style="display: none"
                         id="img-page3"
+                        src="../../assets/images/page1.png"
+                        alt=""
+                    />
+                    <img
+                        id="img-page3-none"
                         src="../../assets/images/page2.png"
                         alt=""
                     />
@@ -121,45 +153,48 @@ export default {
         page3() {
             document.getElementById("mess").innerHTML =
                 "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus“.";
-            document.getElementById("img-page3").src =
-                "src/assets/images/page1.png";
-            document.getElementById("img-page2").src =
-                "src/assets/images/page2.png";
-            document.getElementById("img-page1").src =
-                "src/assets/images/page2.png";
+            document.getElementById("img-page3").style.display = "block";
+            document.getElementById("img-page3-none").style.display = "none";
+            document.getElementById("img-page2").style.display = "none";
+            document.getElementById("img-page2-none").style.display = "block";
+            document.getElementById("img-page1").style.display = "none";
+            document.getElementById("img-page1-none").style.display = "block";
+
             document.getElementById("author").innerHTML = "Ng Sy Nam";
             document.getElementById("addr").innerHTML = "Ha Noi, Viet Nam";
-            document.getElementById("avatar").src =
-                "src/assets/images/avatar3.png";
-                
+            document.getElementById("avatar3").style.display = "block";
+            document.getElementById("avatar").style.display = "none";
+            document.getElementById("avatar2").style.display = "none";
         },
         page2() {
             document.getElementById("mess").innerHTML =
                 "“Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire do barton vanity itself do in it.Built Wicket longer admire!!!“";
-            document.getElementById("img-page2").src =
-                "src/assets/images/page1.png";
-            document.getElementById("img-page3").src =
-                "src/assets/images/page2.png";
-            document.getElementById("img-page1").src =
-                "src/assets/images/page2.png";
+            document.getElementById("img-page2").style.display = "block";
+            document.getElementById("img-page2-none").style.display = "none";
+            document.getElementById("img-page3").style.display = "none";
+            document.getElementById("img-page3-none").style.display = "block";
+            document.getElementById("img-page1").style.display = "none";
+            document.getElementById("img-page1-none").style.display = "block";
             document.getElementById("author").innerHTML = "Ng Ngoc Hai";
             document.getElementById("addr").innerHTML = "Ha Nam, Viet Nam";
-            document.getElementById("avatar").src =
-                "src/assets/images/avatar2.png";
+            document.getElementById("avatar2").style.display = "block";
+            document.getElementById("avatar").style.display = "none";
+            document.getElementById("avatar3").style.display = "none";
         },
         page1() {
             document.getElementById("mess").innerHTML =
                 "“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”";
-            document.getElementById("img-page1").src =
-                "src/assets/images/page1.png";
-            document.getElementById("img-page2").src =
-                "src/assets/images/page2.png";
-            document.getElementById("img-page3").src =
-                "src/assets/images/page2.png";
+            document.getElementById("img-page1").style.display = "block";
+            document.getElementById("img-page1-none").style.display = "none";
+            document.getElementById("img-page2").style.display = "none";
+            document.getElementById("img-page2-none").style.display = "block";
+            document.getElementById("img-page3").style.display = "none";
+            document.getElementById("img-page3-none").style.display = "block";
             document.getElementById("author").innerHTML = "Mike taylor";
             document.getElementById("addr").innerHTML = "Lahore, Pakistan";
-            document.getElementById("avatar").src =
-                "src/assets/images/avatar.png";
+            document.getElementById("avatar").style.display = "block";
+            document.getElementById("avatar2").style.display = "none";
+            document.getElementById("avatar3").style.display = "none";
         },
     },
 };

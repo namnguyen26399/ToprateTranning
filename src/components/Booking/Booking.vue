@@ -1,17 +1,17 @@
 <template>
-    <div id="booking" class="w-full h-[580px] flex mt-[168px] relative sm:block pt-[100px]  sm:block-inline sm:mt-10">
+    <div id="booking" class="w-full h-[580px] flex mt-[168px] relative sm:block s650:flex pt-[100px]  sm:block-inline sm:mt-10">
         <!-- //?left -->
-        <div class="w-1/2  pl-32 md:pl-5 sm:pl-2 sm:w-full">
+        <div class="w-1/2  pl-32 md:pl-5 sm:pl-2  sm:w-full s650:w-[60%]">
             <p data-aos="flip-right" class="Poppins sm:w-full text-left sm:text-center md:ml-5">Easy and Fast</p>
             <p data-aos="flip-right" class="Volkhov text-[50px] mt[15px] md:text-4xl sm:text-2xl  sm:text-center sm:w-full sm:leading-none md:ml-5">Book your next trip in 3 easy steps</p>
             <!-- //? Content -->
 
-            <div id="content" class="mt-[31px]">
+            <div id="content" class="mt-[31px] s650:w-full">
                 <!-- //? 1  -->
-                <div class="flex  sm:w-full sm:pl-[20px] booking-step1 pl-5" data-aos="fade-right ">
-                    <div class="booking-img relative w-12 h-12 mt-4">
+                <div class="flex  sm:w-full sm:pl-[20px] s650:pl-0 booking-step1 pl-5 sm:pl-0  " data-aos="fade-right ">
+                    <div class="booking-img relative w-12 h-12 mt-4 sm:scale-75">
                         <img
-                            class="w-12 h-12"
+                            class="w-12 h-12 "
                             src="../../assets/images/booking1.png"
                             alt=""
                         />
@@ -30,8 +30,8 @@
                     </div>
                 </div>
                 <!-- //? 2   -->
-                <div class="flex mt-5   sm:w-full sm:pl-[20px] pl-5 booking-step2" data-aos="fade-right">
-                    <div class="booking-img relative w-12 h-12 mt-4">
+                <div class="flex mt-5   sm:w-full sm:pl-[20px] s650:pl-0 pl-5  booking-step2 sm:pl-0 " data-aos="fade-right">
+                    <div class="booking-img relative w-12 h-12 mt-4 sm:scale-75">
                         <img
                             class="w-12 h-12"
                             src="../../assets/images/booking2.png"
@@ -52,8 +52,8 @@
                     </div>
                 </div>
                 <!-- //? 3    -->
-                <div class="flex mt-5   sm:w-full sm:pl-[20px] pl-5 booking-step3"  data-aos="fade-right">
-                    <div class="booking-img relative w-12 h-12 mt-4">
+                <div class="flex mt-5   sm:w-full sm:pl-0 s650:pl-0 pl-5  booking-step3"  data-aos="fade-right">
+                    <div class="booking-img relative w-12 h-12 mt-4 sm:scale-75">
                         <img
                             class="w-12 h-12"
                             src="../../assets/images/booking3.png"
@@ -76,7 +76,7 @@
             </div>
         </div>
         <!-- //? Decore          -->
-        <div
+        <!-- <div
         
             class="
                 relative
@@ -92,9 +92,9 @@
                 md:w-[100px]
                 md:h-[100px]
             "
-        ></div>
+        ></div> -->
         <!-- //?right -->
-        <div class="relative right-[200px] right z-30 w-[370px] h-[400px] md:right-[90px] md:mt-[150px] sm:mx-auto  sm:w-full  sm:right-0 "  data-aos="fade-down">
+        <div class="relative s650:w-[30%] s650:mx-0   z-30 w-[370px] h-[400px] md:right-[90px] md:mt-[150px] sm:mx-auto  sm:right-0 s650:mt-[120px] s650:ml-[-50px]"  data-aos="fade-down">
             <div
                 class="
                 bg-white

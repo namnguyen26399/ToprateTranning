@@ -6,7 +6,8 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init({
     duration: 800,
-  });
+    offset: 80,
+});
 import "./assets/custom.css";
 
 createApp(App).mount("#app");

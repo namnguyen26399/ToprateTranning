@@ -12,7 +12,7 @@
                         max-w-[410px]
                         sm:mt-[-100px]
                         lg:mb-5
-                        sm:w-[240px]
+                        sm:w-[90%]
                     "
                 >
                     Best Destinations around the world
@@ -23,12 +23,12 @@
                         volkhov
                         max-w-[545px]
                         md:text-[55px]
-                        sm:text-[30px] sm:leading-none sm:w-[230px]
+                        sm:text-[30px] sm:leading-none sm:w-[90%]
                     "
                 >
                     Travel, enjoy and live a new and full life
                 </div>
-                <div id="desc" class="max-w-[477px]">
+                <div id="desc" class="max-w-[477px] s390:w-[180%]">
                     Built Wicket longer admire do barton vanity itself do in it.
                     Preferred to sportsmen it engrossed listening. Park gate
                     sell they west hard for the.

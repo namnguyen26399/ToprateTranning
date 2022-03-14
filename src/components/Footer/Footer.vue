@@ -17,7 +17,7 @@
         <div class="flex sm:flex-wrap justify-around md:w-screen md:flex-wrap">
             <div class="ml-32 sm:w-full sm:ml-0 lg:ml-[0px] md:ml-10">
                 <p class="p1 sm:w-full sm:text-center">Jadoo.</p>
-                <p class="p2 w-[207px] h-[48px] mt-[19px] sm:mx-auto sm:mt-2">
+                <p class="p2 w-full  mt-[19px] sm:mx-auto sm:mt-2 sm:w-full">
                     Book your trip in minute, get full Control for much longer.
                 </p>
             </div>
@@ -185,9 +185,7 @@ p {
     width: 100%;
     text-align: center;
 }
-.p2 {
-    width: 207px;
-}
+
 .p-blue:hover {
     color: #009af3;
     cursor: pointer;

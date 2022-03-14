@@ -3,7 +3,7 @@
         <!-- //? item 1 -->
         <div
             id="category1"
-            class="category w-[200px] h-[314px] mt-20 sm:mt-10"
+            class="category w-[200px] h-[314px] mt-20 sm:mt-10 sm:w-[50%]"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />
@@ -34,10 +34,10 @@
                 Built Wicket longer admire do barton vanity itself do in it.
             </p>
         </div>
-        <!-- //? item 22222222222222222222222222222222222222222 -->
+        <!-- //? item 2 -->
         <div
             id="category1"
-            class="item2 category w-[200px] h-[314px] mt-20 relative z-30 sm:mt-10"
+            class="item2 category w-[200px] h-[314px] mt-20 relative z-30 sm:mt-10 sm:w-[50%]"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />
@@ -54,18 +54,15 @@
             </p>
             <p
                 class="
-                    relative
                     heading2
                     Poppins
                     text-center
                     font-medium
                     text-16
+                    px-2
                     mt-4
-                    w-[200px]
-                    h-[164px]
-                    item2
-                    bg-white
-                    z-30
+                    w-[190px]
+                    mx-auto
                 "
             >
                 Built Wicket longer admire do barton vanity itself do in it.
@@ -76,10 +73,10 @@
                 alt=""
             />
         </div>
-        <!-- //? item 1 -->
+        <!-- //? item 3 -->
         <div
             id="category1"
-            class="category w-[200px] h-[314px] mt-20 sm:mt-10"
+            class="category w-[200px] h-[314px] mt-20 sm:mt-10 sm:w-[50%]"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />
@@ -110,10 +107,10 @@
                 Built Wicket longer admire do barton vanity itself do in it.
             </p>
         </div>
-        <!-- //? item 1 -->
+        <!-- //? item 4 -->
         <div
             id="category1"
-            class="category w-[200px] h-[314px] mt-20 sm:mt-10"
+            class="category w-[200px] h-[314px] mt-20 sm:mt-10 sm:w-[50%]"
             data-aos="fade-up"
         >
             <img class="mx-auto" src="../.././assets/images/cate1.png" alt="" />

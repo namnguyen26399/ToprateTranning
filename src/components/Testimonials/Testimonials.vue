@@ -8,6 +8,7 @@
             mt-[200px]
             flex
             sm:block sm:mt-[500px] sm:pl-5
+            s650:mt-[100px]
             lg:max-w-full lg:pl-0
             md:-ml-[0px] md:pl-0
             box-border
@@ -69,8 +70,9 @@
                     bg-white
                     mike-taylor
                     relative
-                    sm:h-80 sm:w-[300px] sm:mx-auto
+                    sm:h-80  sm:mx-auto
                     pt-10
+                    sm:w-[90%]
                 "
             >
                 <p id="mess" class="p3 pl-[34px]">

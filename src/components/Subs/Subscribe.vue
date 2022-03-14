@@ -114,7 +114,8 @@ export default {};
 <style scoped>
 #sub-view {
     border-radius: 20px;
-    border-top-left-radius: 129px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .Poppins1 {
     font-family: Poppins;

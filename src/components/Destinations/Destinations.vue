@@ -4,7 +4,7 @@
         <p data-aos="zoom-in" class="Volkhov mt-2 text-[50px] sm:text-[30px]">
             Top Destinations
         </p>
-        <div class="mt-14 flex flex-wrap px-auto justify-around">
+        <div class="mt-14 flex flex-wrap px-auto justify-around h-auto ">
             <!-- //? item 1 -->
             <div class="relative" data-aos="fade-up">
                 <div
@@ -125,7 +125,7 @@
             </div>
             <!-- //? item4   -->
             <div
-                class="relative md:block lg:hidden lgs:hidden sm:hidden"
+                class="relative md:block lg:hidden lgs:hidden s976:hidden"
                 data-aos="fade-up"
             >
                 <div
